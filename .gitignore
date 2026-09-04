@@ -1,0 +1,12 @@
+.DS_Store
+.DS_Store?
+._*
+
+# Sorgenti e bozze, non usati dal sito
+Gemini_Generated_Image_*.jpeg
+WhatsApp Image *.jpeg
+2.jpeg
+3.jpeg
+SOPRACCIGLIERIA.svg
+assets/social/
+assets/lips-*.jpg
