@@ -3,7 +3,6 @@
 .DS_Store
 Dockerfile
 docker-compose.yml
-nginx.conf
 README.md
 *.md
 Gemini_Generated_Image_*.jpeg
