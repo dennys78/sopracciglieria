@@ -1,0 +1,8 @@
+services:
+  sito:
+    build: .
+    image: sopracciglieria:latest
+    container_name: sopracciglieria
+    ports:
+      - "8090:80"
+    restart: unless-stopped

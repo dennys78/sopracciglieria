@@ -1,0 +1,15 @@
+.git
+.gitignore
+.DS_Store
+Dockerfile
+docker-compose.yml
+nginx.conf
+README.md
+*.md
+Gemini_Generated_Image_*.jpeg
+WhatsApp Image *.jpeg
+2.jpeg
+3.jpeg
+SOPRACCIGLIERIA.svg
+assets/social
+assets/lips-*.jpg
