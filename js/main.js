@@ -4,6 +4,24 @@
 
   const year = $("#year");
   if (year) year.textContent = String(new Date().getFullYear());
+  $$(".js-year").forEach((el) => {
+    el.textContent = String(new Date().getFullYear());
+  });
+
+  const cookieBar = $("#cookieBar");
+  const cookieBtn = $("#cookieAccept");
+  if (cookieBar && cookieBtn) {
+    const cookieKey = "sopracciglieria-cookie";
+    if (!localStorage.getItem(cookieKey)) {
+      cookieBar.hidden = false;
+      cookieBar.classList.add("is-visible");
+    }
+    cookieBtn.addEventListener("click", () => {
+      localStorage.setItem(cookieKey, "1");
+      cookieBar.classList.remove("is-visible");
+      cookieBar.hidden = true;
+    });
+  }
 
   window.addEventListener("load", () => {
     const preloader = $("#preloader");
