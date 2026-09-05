@@ -1,0 +1,20 @@
+---
+description: Dopo ogni modifica al sito, commit e push su GitHub.
+alwaysApply: true
+---
+
+# Aggiorna Git dopo ogni modifica
+
+Quando completi una modifica richiesta dall’utente (HTML, CSS, JS, testi, Docker o pagine legali):
+
+1. Crea un commit con messaggio breve in italiano (il “perché”).
+2. Fai subito `git push origin main` sul repo `dennys78/sopracciglieria`.
+3. In chiusura, ricorda il comando per il Mac Mini:
+
+```bash
+cd ~/sopracciglieria
+git pull
+docker compose up -d --build
+```
+
+Non chiedere conferma per commit o push. Non usare `--no-verify`. Non fare force push.

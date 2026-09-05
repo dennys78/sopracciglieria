@@ -754,6 +754,11 @@ p:last-child {
 .service-card p {
   font-size: 15px;
   margin-bottom: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-align-last: left;
 }
 
 .link-more {
@@ -778,6 +783,14 @@ p:last-child {
 .process-item {
   text-align: center;
   padding: 10px 8px;
+}
+
+.process-item p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-align-last: left;
 }
 
 .process-num {
@@ -1887,13 +1900,21 @@ p:last-child {
 
   p,
   .about-body p,
-  .service-card p,
   .course-card p,
   .accordion-body,
   .testimonial p {
     text-align: left;
     text-align-last: auto;
     text-justify: auto;
+  }
+
+  .service-card p,
+  .process-item p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    text-align-last: left;
   }
 
   .section-head p,
