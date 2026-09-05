@@ -1220,6 +1220,14 @@ p:last-child {
   display: block;
 }
 
+.accordion-body p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-align-last: left;
+}
+
 /* CTA band */
 .cta-band {
   background: var(--dark);
@@ -1894,7 +1902,6 @@ p:last-child {
 
   p,
   .about-body p,
-  .accordion-body,
   .testimonial p {
     text-align: left;
     text-align-last: auto;
@@ -1903,7 +1910,8 @@ p:last-child {
 
   .service-card p,
   .process-item p,
-  .course-card p {
+  .course-card p,
+  .accordion-body p {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
