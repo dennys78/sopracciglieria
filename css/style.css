@@ -805,7 +805,7 @@ p:last-child {
 /* Courses */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 28px 24px;
 }
 
@@ -853,6 +853,11 @@ p:last-child {
 .course-card p {
   font-size: 15px;
   margin-bottom: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-align-last: left;
 }
 
 .process-item h3 {
@@ -1828,7 +1833,7 @@ p:last-child {
   }
 
   .courses-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .process-grid {
@@ -1900,7 +1905,6 @@ p:last-child {
 
   p,
   .about-body p,
-  .course-card p,
   .accordion-body,
   .testimonial p {
     text-align: left;
@@ -1909,7 +1913,8 @@ p:last-child {
   }
 
   .service-card p,
-  .process-item p {
+  .process-item p,
+  .course-card p {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
@@ -1965,6 +1970,7 @@ p:last-child {
   .about-stats,
   .services-grid,
   .process-grid,
+  .courses-grid,
   .footer-grid,
   .footer-bottom {
     grid-template-columns: 1fr;
