@@ -719,6 +719,24 @@ p:last-child {
   transition: background 0.35s var(--ease);
 }
 
+.service-card.has-photo {
+  padding-top: 0;
+}
+
+.service-card-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0 -32px 22px;
+  background: var(--blush-bg);
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
 .service-card:hover {
   background: #fffafb;
 }
@@ -1985,6 +2003,14 @@ p:last-child {
 
   .service-card {
     padding: 28px 20px 30px;
+  }
+
+  .service-card.has-photo {
+    padding-top: 0;
+  }
+
+  .service-card-media {
+    margin: 0 -20px 18px;
   }
 
   .course-card-body {
