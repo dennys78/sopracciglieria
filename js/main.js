@@ -46,6 +46,12 @@
     nav.addEventListener("click", (e) => {
       if (e.target.closest("a")) setNavOpen(false);
     });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setNavOpen(false);
+    });
+    window.addEventListener("resize", () => {
+      if (window.matchMedia("(min-width: 1101px)").matches) setNavOpen(false);
+    });
   }
 
   const slides = $$(".hero-slide");
