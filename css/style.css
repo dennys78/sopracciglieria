@@ -1556,11 +1556,33 @@ p:last-child {
   cursor: pointer;
 }
 
+.wa-float {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 95;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease);
+}
+
+.wa-float:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
 /* Back to top */
 .to-top {
   position: fixed;
-  right: 24px;
-  bottom: 24px;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: calc(88px + env(safe-area-inset-bottom));
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -1905,7 +1927,7 @@ p:last-child {
 
   .to-top {
     right: max(16px, env(safe-area-inset-right));
-    bottom: max(16px, env(safe-area-inset-bottom));
+    bottom: calc(88px + env(safe-area-inset-bottom));
   }
 }
 
@@ -2148,7 +2170,7 @@ p:last-child {
   }
 
   .cookie-bar {
-    bottom: max(72px, env(safe-area-inset-bottom));
+    bottom: max(88px, calc(72px + env(safe-area-inset-bottom)));
   }
 
   .legal {
