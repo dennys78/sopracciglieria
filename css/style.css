@@ -297,7 +297,7 @@ p:last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
   min-height: var(--header-h);
 }
 
@@ -310,23 +310,28 @@ p:last-child {
 }
 
 .brand img {
-  height: 70px;
+  height: 58px;
   width: auto;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  flex-wrap: nowrap;
+  gap: 18px;
   margin-left: auto;
 }
 
 .nav a {
   font-family: "PT Serif", serif;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--heading);
   padding: 8px 0;
   position: relative;
+  white-space: nowrap;
+  hyphens: none;
+  -webkit-hyphens: none;
+  flex-shrink: 0;
 }
 
 .nav a::after {
@@ -1688,9 +1693,7 @@ p:last-child {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (max-width: 900px) {
   html {
     scroll-padding-top: 76px;
   }
@@ -1727,6 +1730,7 @@ p:last-child {
     background: var(--rose);
     flex-direction: column;
     align-items: stretch;
+    flex-wrap: nowrap;
     gap: 0;
     padding: 8px 0 20px;
     padding-bottom: max(20px, env(safe-area-inset-bottom));
@@ -1740,8 +1744,11 @@ p:last-child {
 
   .nav a {
     color: var(--white);
-    padding: 14px 24px;
-    min-height: 48px;
+    padding: 16px 24px;
+    min-height: 52px;
+    font-size: 18px;
+    white-space: nowrap;
+    hyphens: none;
   }
 
   .nav a::after {
@@ -1758,7 +1765,7 @@ p:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 12px 20px 4px;
+    margin: 12px 20px 8px;
     background: var(--white);
     color: var(--rose) !important;
     font-weight: 700;
@@ -1783,22 +1790,24 @@ p:last-child {
   }
 
   .header-main {
-    gap: 16px;
-    min-height: 80px;
+    gap: 10px;
+    min-height: 72px;
   }
 
   .brand {
     min-width: 0;
-    max-width: calc(100% - 52px);
+    max-width: calc(100% - 170px);
   }
 
   .brand img {
-    height: 54px;
+    height: 48px;
     max-width: 100%;
     object-fit: contain;
     object-position: left center;
   }
+}
 
+@media (max-width: 900px) {
   .hero-slide,
   .about-wrap,
   .split,
@@ -1998,11 +2007,31 @@ p:last-child {
   }
 
   .header-main {
-    min-height: 72px;
+    min-height: 64px;
+    gap: 6px;
+  }
+
+  .brand {
+    max-width: calc(100% - 150px);
   }
 
   .brand img {
-    height: 46px;
+    height: 40px;
+  }
+
+  .header-social a {
+    width: 34px;
+    height: 34px;
+  }
+
+  .header-social a svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-wa {
+    width: 38px;
+    height: 38px;
   }
 
   .section {
