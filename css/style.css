@@ -753,6 +753,10 @@ p:last-child {
   object-position: center 18%;
 }
 
+#mapping .service-card-media img {
+  object-position: center 36%;
+}
+
 .service-card:hover {
   background: #fffafb;
 }
